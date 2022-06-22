@@ -8,15 +8,16 @@
   font-style: italic;
   src: url(fonts/HattoriHanzoItalic.otf);
 }
+
 html, body{
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 .frame-1 {
     background-color: white;
-    width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -37,13 +38,16 @@ html, body{
   font-style: italic;
   font-size: 263.625px;
   font-weight: 300;
-
-  
 }
 
-.frame-white-null {   
-    font-family: 'HattoriHanzo';
-    font-style: normal;
-    display: block; 
-    margin: 0 auto;
+.frame-1__header {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 30.94px;
+  padding-top: 20.86px;
+  flex: 0 1 auto;
+}
+
+.frame-1__footer {
+  display: flex;
 }
