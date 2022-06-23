@@ -66,3 +66,36 @@ body {
   line-height: 20px;
   padding-left: 20.86px;
 }
+
+.frame1-shtorka {
+  z-index: auto;
+  position: fixed;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  animation-direction: alternate;
+  animation-name: up-shtorka;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+
+@keyframes up-shtorka {
+  from {
+    top: 100%;
+  }
+
+  to {
+    top: 0%;
+  }
+}
+
+@keyframes down-shtorka {
+  0% {
+    top: 100%;
+  }
+
+  100% {
+    top: 0%;
+  }
+
+}
