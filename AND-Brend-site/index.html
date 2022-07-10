@@ -8,17 +8,161 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="frame-1__header">
-        <img src="images/Logo.svg" alt="Logo">
+    <div id="frame-1__header">
+        <img id="logo" src="images/Logo.svg" alt="Logo">
     </div>
-    <div class="frame-1">
-        <h1 class="frame-white-one">create</h1>
-        <h1 class="frame-white-two">future</h1>
+
+    <div id="frame-1">
+        <h1 id="frame-one"></h1>
+        <h1 id="frame-two"></h1>
     </div>
-    <div class="frame-1__footer">
-        <p class="frame-1__footer-text">{ 1% }</p>
+
+    <div id="frame1-shtorka-up"></div>
+    <div id="frame1-shtorka-down"></div>
+
+    <div id="frame1-shtorka-up-one"></div>
+    <div id="frame1-shtorka-down-one"></div>
+
+    <div id="frame1-shtorka-up-two"></div>
+    <div id="frame1-shtorka-down-two"></div>
+
+    <div id="frame1-shtorka-up-three"></div>
+    <div id="frame1-shtorka-down-three"></div>
+
+    <div id="frame1-shtorka-up-four"></div>
+    <div id="frame1-shtorka-down-four"></div>
+
+    <div id="frame1-shtorka-up-five"></div>
+    <div id="frame1-shtorka-down-five"></div>
+
+    <div id="frame1-shtorka-up-six"></div>
+    <div id="frame1-shtorka-down-six"></div>
+
+    <div id="frame1-shtorka-up-seven"></div>
+    <div id="frame1-shtorka-down-seven"></div>
+
+    <div id="frame-1__footer">
+        <p id="frame-1__footer-text">{ 1% }</p>
     </div>
-    <div class="frame1-shtorka-up"></div>
-    <div class="frame1-shtorka-down"></div>
+    
+
+    <script>
+        document.getElementById("frame-one").innerHTML = 'create';
+        document.getElementById("frame-two").innerHTML = 'future';
+        document.getElementById("frame-one").style.fontStyle = 'light';
+        document.getElementById("frame-two").style.fontStyle = 'italic';
+
+        
+        const nulls = document.getElementById("frame1-shtorka-up");
+        const one = document.getElementById("frame1-shtorka-up-one");
+        const two = document.getElementById("frame1-shtorka-up-two");
+        const three = document.getElementById("frame1-shtorka-up-three");
+        const four = document.getElementById("frame1-shtorka-up-four");
+        const five = document.getElementById("frame1-shtorka-up-five");
+        const six = document.getElementById("frame1-shtorka-up-six");
+        const seven = document.getElementById("frame1-shtorka-up-seven");
+
+        nulls.addEventListener("animationend", () => {
+            document.getElementById("frame-1").style.color = '#fff';
+            document.getElementById("frame-1").style.zIndex = '2'
+            document.getElementById("frame-one").innerHTML = 'be';
+            document.getElementById("frame-two").innerHTML = 'yourself';
+            document.getElementById('logo').src = 'images/logoWhite.svg';
+            document.getElementById('logo').style.zIndex = '2';
+            document.getElementById('frame-1__footer-text').style.zIndex = '2';
+            document.getElementById('frame-1__footer-text').style.color = '#fff';
+        });
+
+        one.addEventListener("animationend", () => {
+            document.getElementById("frame-one").style.fontStyle = 'italic';
+            document.getElementById("frame-two").style.fontStyle = 'light';
+            document.getElementById("frame-1").style.color = '#000';
+            document.getElementById("frame-1").style.zIndex = '4'
+            document.getElementById("frame-one").innerHTML = 'stand';
+            document.getElementById("frame-two").innerHTML = 'out';
+            document.getElementById('logo').src = 'images/Logo.svg';
+            document.getElementById('logo').style.zIndex = '4';
+            document.getElementById('frame-1__footer-text').style.zIndex = '4';
+            document.getElementById('frame-1__footer-text').style.color = '#000';
+        });
+
+        two.addEventListener("animationend", () => {
+            document.getElementById("frame-one").style.fontStyle = 'light';
+            document.getElementById("frame-two").style.fontStyle = 'italic';
+            document.getElementById("frame-1").style.color = '#fff';
+            document.getElementById("frame-1").style.zIndex = '6'
+            document.getElementById("frame-one").innerHTML = 'create';
+            document.getElementById("frame-two").innerHTML = 'future';
+            document.getElementById('logo').src = 'images/logoWhite.svg';
+            document.getElementById('logo').style.zIndex = '6';
+            document.getElementById('frame-1__footer-text').style.zIndex = '6';
+            document.getElementById('frame-1__footer-text').style.color = '#fff';
+        });
+
+        three.addEventListener("animationend", () => {
+            document.getElementById("frame-one").style.fontStyle = 'italic';
+            document.getElementById("frame-two").style.fontStyle = 'light';
+            document.getElementById("frame-1").style.color = '#000';
+            document.getElementById("frame-1").style.zIndex = '8'
+            document.getElementById("frame-one").innerHTML = 'be';
+            document.getElementById("frame-two").innerHTML = 'yourself';
+            document.getElementById('logo').src = 'images/Logo.svg';
+            document.getElementById('logo').style.zIndex = '8';
+            document.getElementById('frame-1__footer-text').style.zIndex = '8';
+            document.getElementById('frame-1__footer-text').style.color = '#000';
+        });
+
+        four.addEventListener("animationend", () => {
+            document.getElementById("frame-one").style.fontStyle = 'light';
+            document.getElementById("frame-two").style.fontStyle = 'italic';
+            document.getElementById("frame-1").style.color = '#fff';
+            document.getElementById("frame-1").style.zIndex = '10'
+            document.getElementById("frame-one").innerHTML = 'stand';
+            document.getElementById("frame-two").innerHTML = 'out';
+            document.getElementById('logo').src = 'images/Logo.svg';
+            document.getElementById('logo').style.zIndex = '10';
+            document.getElementById('frame-1__footer-text').style.zIndex = '10';
+            document.getElementById('frame-1__footer-text').style.color = '#fff';
+        });
+
+        five.addEventListener("animationend", () => {
+            document.getElementById("frame-one").style.fontStyle = 'light';
+            document.getElementById("frame-two").style.fontStyle = 'italic';
+            document.getElementById("frame-1").style.color = '#fff';
+            document.getElementById("frame-1").style.zIndex = '12'
+            document.getElementById("frame-one").innerHTML = 'create';
+            document.getElementById("frame-two").innerHTML = 'future';
+            document.getElementById('logo').src = 'images/logoWhite.svg';
+            document.getElementById('logo').style.zIndex = '12';
+            document.getElementById('frame-1__footer-text').style.zIndex = '12';
+            document.getElementById('frame-1__footer-text').style.color = '#fff';
+        });
+
+        six.addEventListener("animationend", () => {
+            document.getElementById("frame-one").style.fontStyle = 'italic';
+            document.getElementById("frame-two").style.fontStyle = 'light';
+            document.getElementById("frame-1").style.color = '#fff';
+            document.getElementById("frame-1").style.zIndex = '14'
+            document.getElementById("frame-one").innerHTML = 'be';
+            document.getElementById("frame-two").innerHTML = 'yourself';
+            document.getElementById('logo').src = 'images/logoWhite.svg';
+            document.getElementById('logo').style.zIndex = '14';
+            document.getElementById('frame-1__footer-text').style.zIndex = '14';
+            document.getElementById('frame-1__footer-text').style.color = '#fff';
+        });
+
+        seven.addEventListener("animationend", () => {
+            document.getElementById("frame-one").style.fontStyle = 'light';
+            document.getElementById("frame-two").style.fontStyle = 'italic';
+            document.getElementById("frame-1").style.color = '#fff';
+            document.getElementById("frame-1").style.zIndex = '16'
+            document.getElementById("frame-one").innerHTML = 'stand';
+            document.getElementById("frame-two").innerHTML = 'out';
+            document.getElementById('logo').src = 'images/logoWhite.svg';
+            document.getElementById('logo').style.zIndex = '16';
+            document.getElementById('frame-1__footer-text').style.zIndex = '16';
+            document.getElementById('frame-1__footer-text').style.color = '#fff';
+        });
+    </script>
 </body>
 </html>
