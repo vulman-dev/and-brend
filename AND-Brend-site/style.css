@@ -135,13 +135,37 @@ body {
   }
 }
 
+@keyframes up-shtorka-back {
+  from {
+    top: 100%;
+    background-color: #fff;
+  }
+
+  to {
+    top: 0%;
+    background-color: #fff;
+  }
+}
+
+@keyframes down-shtorka-back {
+  0% {
+    top: 0%;
+    background-color: #fff;
+  }
+
+  100% {
+    top: 100%;
+    background-color: #000;
+  }
+}
+
 #frame1-shtorka-up-one { 
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  animation: up-shtorka-one 1s linear;
+  animation: up-shtorka-back 1s linear;
   animation-delay: 3s;
   animation-fill-mode:forwards;
 }
@@ -151,33 +175,9 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  animation: down-shtorka-one 1s linear;
+  animation: down-shtorka-back 1s linear;
   animation-delay: 4s;
   animation-fill-mode:forwards;
-}
-
-@keyframes up-shtorka-one {
-  from {
-    top: 100%;
-    background-color: #fff;
-  }
-
-  to {
-    top: 0%;
-    background-color: #fff;
-  }
-}
-
-@keyframes down-shtorka-one {
-  0% {
-    top: 0%;
-    background-color: #fff;
-  }
-
-  100% {
-    top: 100%;
-    background-color: #000;
-  }
 }
 
 #frame1-shtorka-up-two { 
@@ -186,7 +186,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  animation: up-shtorka-two 1s linear;
+  animation: up-shtorka 1s linear;
   animation-delay: 5s;
   animation-fill-mode:forwards;
 }
@@ -196,33 +196,9 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  animation: down-shtorka-two 1s linear;
+  animation: down-shtorka 1s linear;
   animation-delay: 6s;
   animation-fill-mode:forwards;
-}
-
-@keyframes up-shtorka-two {
-  from {
-    top: 100%;
-    background-color: #000;
-  }
-
-  to {
-    top: 0%;
-    background-color: #000;
-  }
-}
-
-@keyframes down-shtorka-two {
-  0% {
-    top: 0%;
-    background-color: #000;
-  }
-
-  100% {
-    top: 100%;
-    background-color: #fff;
-  }
 }
 
 #frame1-shtorka-up-three { 
@@ -231,7 +207,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  animation: up-shtorka-three 1s linear;
+  animation: up-shtorka-back 1s linear;
   animation-delay: 7s;
   animation-fill-mode:forwards;
 }
@@ -241,33 +217,9 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  animation: down-shtorka-three 1s linear;
+  animation: down-shtorka-back 1s linear;
   animation-delay: 8s;
   animation-fill-mode:forwards;
-}
-
-@keyframes up-shtorka-three {
-  from {
-    top: 100%;
-    background-color: #fff;
-  }
-
-  to {
-    top: 0%;
-    background-color: #fff;
-  }
-}
-
-@keyframes down-shtorka-three {
-  0% {
-    top: 0%;
-    background-color: #fff;
-  }
-
-  100% {
-    top: 100%;
-    background-color: #000;
-  }
 }
 
 #frame1-shtorka-up-four { 
@@ -276,7 +228,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  animation: up-shtorka-four 1s linear;
+  animation: up-shtorka 1s linear;
   animation-delay: 9s;
   animation-fill-mode:forwards;
 }
@@ -286,33 +238,9 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  animation: down-shtorka-four 1s linear;
+  animation: down-shtorka 1s linear;
   animation-delay: 10s;
   animation-fill-mode:forwards;
-}
-
-@keyframes up-shtorka-four {
-  from {
-    top: 100%;
-    background-color: #000;
-  }
-
-  to {
-    top: 0%;
-    background-color: #000;
-  }
-}
-
-@keyframes down-shtorka-four {
-  0% {
-    top: 0%;
-    background-color: #000;
-  }
-
-  100% {
-    top: 100%;
-    background-color: #fff;
-  }
 }
 
 #frame1-shtorka-up-five { 
@@ -321,43 +249,20 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  animation: up-shtorka-five 1s linear;
+  animation: up-shtorka-back 1s linear;
   animation-delay: 11s;
   animation-fill-mode:forwards;
 }
+
 #frame1-shtorka-down-five {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  animation: down-shtorka-five 1s linear;
+  animation: down-shtorka-back 1s linear;
   animation-delay: 12s;
   animation-fill-mode:forwards;
-}
-
-@keyframes up-shtorka-five {
-  from {
-    top: 100%;
-    background-color: #000;
-  }
-
-  to {
-    top: 0%;
-    background-color: #000;
-  }
-}
-
-@keyframes down-shtorka-five {
-  0% {
-    top: 0%;
-    background-color: #000;
-  }
-
-  100% {
-    top: 100%;
-    background-color: #fff;
-  }
 }
 
 #frame1-shtorka-up-six { 
@@ -366,7 +271,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  animation: up-shtorka-six 1s linear;
+  animation: up-shtorka 1s linear;
   animation-delay: 13s;
   animation-fill-mode:forwards;
 }
@@ -376,33 +281,9 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  animation: down-shtorka-six 1s linear;
+  animation: down-shtorka 1s linear;
   animation-delay: 14s;
   animation-fill-mode:forwards;
-}
-
-@keyframes up-shtorka-six {
-  from {
-    top: 100%;
-    background-color: #000;
-  }
-
-  to {
-    top: 0%;
-    background-color: #000;
-  }
-}
-
-@keyframes down-shtorka-six {
-  0% {
-    top: 0%;
-    background-color: #000;
-  }
-
-  100% {
-    top: 100%;
-    background-color: #fff;
-  }
 }
 
 #frame1-shtorka-up-seven { 
@@ -411,7 +292,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  animation: up-shtorka-seven 1s linear;
+  animation: up-shtorka-back 1s linear;
   animation-delay: 15s;
   animation-fill-mode:forwards;
 }
@@ -421,31 +302,39 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  animation: down-shtorka-seven 1s linear;
+  animation: down-shtorka-back 1s linear;
   animation-delay: 16s;
   animation-fill-mode:forwards;
 }
 
-@keyframes up-shtorka-seven {
-  from {
-    top: 100%;
-    background-color: #000;
-  }
-
-  to {
-    top: 0%;
-    background-color: #000;
-  }
+#frame1-shtorka-up-eight { 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: up-shtorka 1s linear;
+  animation-delay: 17s;
+  animation-fill-mode:forwards;
+}
+#frame1-shtorka-down-eight {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: down-shtorka 1s linear;
+  animation-delay: 18s;
+  animation-fill-mode:forwards;
 }
 
-@keyframes down-shtorka-seven {
-  0% {
-    top: 0%;
-    background-color: #000;
-  }
-
-  100% {
-    top: 100%;
-    background-color: #fff;
-  }
+#frame1-shtorka-up-end { 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: up-shtorka-back 1s linear;
+  animation-delay: 19s;
+  animation-fill-mode:forwards;
 }
