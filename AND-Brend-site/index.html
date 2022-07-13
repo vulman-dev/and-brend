@@ -26,25 +26,7 @@
     <div id="frame1-shtorka-up-two"></div>
     <div id="frame1-shtorka-down-two"></div>
 
-    <div id="frame1-shtorka-up-three"></div>
-    <div id="frame1-shtorka-down-three"></div>
 
-    <div id="frame1-shtorka-up-four"></div>
-    <div id="frame1-shtorka-down-four"></div>
-
-    <div id="frame1-shtorka-up-five"></div>
-    <div id="frame1-shtorka-down-five"></div>
-
-    <div id="frame1-shtorka-up-six"></div>
-    <div id="frame1-shtorka-down-six"></div>
-
-    <div id="frame1-shtorka-up-seven"></div>
-    <div id="frame1-shtorka-down-seven"></div>
-
-    <div id="frame1-shtorka-up-eight"></div>
-    <div id="frame1-shtorka-down-eight"></div>
-
-    <div id="frame1-shtorka-up-end"></div>
 
     <div id="frame-1__footer">
         <p id="frame-1__footer-text">{ 1% }</p>
@@ -52,13 +34,9 @@
     
 
     <script>
-        document.getElementById("frame-one").innerHTML = 'create';
-        document.getElementById("frame-two").innerHTML = 'future';
-        document.getElementById("frame-one").setAttribute('style','font-style: light');
-        document.getElementById("frame-two").setAttribute('style','font-style: italic');
 
         timer = 1;
-        let timerId = setInterval(() => timing(), 200);
+        let timerId = setInterval(() => timing(), 60);
 
         function timing(){
             document.getElementById("frame-1__footer-text").innerHTML = '{ '+timer+'% }';
@@ -69,130 +47,47 @@
             }
         }
 
-        const nulls = document.getElementById("frame1-shtorka-up");
-        const one = document.getElementById("frame1-shtorka-up-one");
+        const nulls = document.getElementById("frame1-shtorka-down");
+        const one = document.getElementById("frame1-shtorka-down-one");
         const two = document.getElementById("frame1-shtorka-up-two");
-        const three = document.getElementById("frame1-shtorka-up-three");
-        const four = document.getElementById("frame1-shtorka-up-four");
-        const five = document.getElementById("frame1-shtorka-up-five");
-        const six = document.getElementById("frame1-shtorka-up-six");
-        const seven = document.getElementById("frame1-shtorka-up-seven");
-        const eight = document.getElementById("frame1-shtorka-up-eight");
+        const three = document.getElementById("frame1-shtorka-up");
 
+        document.getElementById("frame-one").innerHTML = 'create';
+        document.getElementById("frame-two").innerHTML = 'future';
+        document.getElementById("frame-one").setAttribute('style','font-style: light');
+        document.getElementById("frame-two").setAttribute('style','font-style: italic');
+        document.getElementById("frame-1").style.zIndex = '10';
+        document.getElementById('logo').style.zIndex = '10';
+        document.getElementById('frame-1__footer-text').style.zIndex = '10';
+        
+        three.addEventListener("animationstart", () => {
+            document.getElementById('logo').src = 'images/Logo.svg';
+            document.getElementById('frame-1__footer-text').style.color = 'rgb(255, 255, 255)';
+            document.getElementById('frame-1').style.color = 'rgb(255, 255, 255)';
+        });
+        nulls.addEventListener("animationstart", () => {
+            document.getElementById("frame-one").innerHTML = 'create';
+            document.getElementById("frame-two").innerHTML = 'future';
+            document.getElementById("frame-one").setAttribute('style','font-style: light');
+            document.getElementById("frame-two").setAttribute('style','font-style: italic');
+            document.getElementById('logo').src = 'images/logoWhite.svg';
+            document.getElementById('frame-1__footer-text').style.color = 'rgb(255, 255, 255)';
+            document.getElementById('frame-1').style.color = 'rgb(255, 255, 255)';
+
+        });
         nulls.addEventListener("animationend", () => {
-            document.getElementById("frame-1").style.color = '#fff';
-            document.getElementById("frame-1").style.zIndex = '2'
             document.getElementById("frame-one").innerHTML = 'be';
             document.getElementById("frame-two").innerHTML = 'yourself';
             document.getElementById('logo').src = 'images/logoWhite.svg';
-            document.getElementById('logo').style.zIndex = '2';
-            document.getElementById('frame-1__footer-text').style.zIndex = '2';
-            document.getElementById('frame-1__footer-text').style.color = '#fff';
         });
 
         one.addEventListener("animationend", () => {
-            document.getElementById("frame-1").style.color = '#000';
-            document.getElementById("frame-1").style.zIndex = '4'
             document.getElementById("frame-one").innerHTML = 'stand';
             document.getElementById("frame-two").innerHTML = 'out';
             document.getElementById("frame-one").setAttribute('style','font-style: italic');
             document.getElementById("frame-two").setAttribute('style','font-style: light');
-            document.getElementById('logo').src = 'images/Logo.svg';
-            document.getElementById('logo').style.zIndex = '4';
-            document.getElementById('frame-1__footer-text').style.zIndex = '4';
-            document.getElementById('frame-1__footer-text').style.color = '#000';
         });
 
-        two.addEventListener("animationend", () => {
-            document.getElementById("frame-1").style.color = '#fff';
-            document.getElementById("frame-1").style.zIndex = '6'
-            document.getElementById("frame-one").innerHTML = 'create';
-            document.getElementById("frame-two").innerHTML = 'future';
-            document.getElementById("frame-one").setAttribute('style','font-style: italic');
-            document.getElementById("frame-two").setAttribute('style','font-style: light');
-            document.getElementById('logo').src = 'images/logoWhite.svg';
-            document.getElementById('logo').style.zIndex = '6';
-            document.getElementById('frame-1__footer-text').style.zIndex = '6';
-            document.getElementById('frame-1__footer-text').style.color = '#fff';
-        });
-
-        three.addEventListener("animationend", () => {
-            document.getElementById("frame-1").style.color = '#000';
-            document.getElementById("frame-1").style.zIndex = '8'
-            document.getElementById("frame-one").innerHTML = 'be';
-            document.getElementById("frame-two").innerHTML = 'yourself';
-            document.getElementById("frame-one").setAttribute('style','font-style: italic');
-            document.getElementById("frame-two").setAttribute('style','font-style: light');
-            document.getElementById('logo').src = 'images/Logo.svg';
-            document.getElementById('logo').style.zIndex = '8';
-            document.getElementById('frame-1__footer-text').style.zIndex = '8';
-            document.getElementById('frame-1__footer-text').style.color = '#000';
-        });
-
-        four.addEventListener("animationend", () => {
-            document.getElementById("frame-1").style.color = '#fff';
-            document.getElementById("frame-1").style.zIndex = '10'
-            document.getElementById("frame-one").innerHTML = 'stand';
-            document.getElementById("frame-two").innerHTML = 'out';
-            document.getElementById("frame-one").setAttribute('style','font-style: light');
-            document.getElementById("frame-two").setAttribute('style','font-style: italic');
-            document.getElementById('logo').src = 'images/logoWhite.svg';
-            document.getElementById('logo').style.zIndex = '10';
-            document.getElementById('frame-1__footer-text').style.zIndex = '10';
-            document.getElementById('frame-1__footer-text').style.color = '#fff';
-        });
-
-        five.addEventListener("animationend", () => {
-            document.getElementById("frame-1").style.color = '#fff';
-            document.getElementById("frame-1").style.zIndex = '12'
-            document.getElementById("frame-one").innerHTML = 'create';
-            document.getElementById("frame-two").innerHTML = 'future';
-            document.getElementById("frame-one").setAttribute('style','font-style: light');
-            document.getElementById("frame-two").setAttribute('style','font-style: italic');
-            document.getElementById('logo').src = 'images/logoWhite.svg';
-            document.getElementById('logo').style.zIndex = '12';
-            document.getElementById('frame-1__footer-text').style.zIndex = '12';
-            document.getElementById('frame-1__footer-text').style.color = '#fff';
-        });
-
-        six.addEventListener("animationend", () => {
-            document.getElementById("frame-1").style.color = '#fff';
-            document.getElementById("frame-1").style.zIndex = '14'
-            document.getElementById("frame-one").innerHTML = 'be';
-            document.getElementById("frame-two").innerHTML = 'yourself';
-            document.getElementById("frame-one").setAttribute('style','font-style: italic');
-            document.getElementById("frame-two").setAttribute('style','font-style: light');
-            document.getElementById('logo').src = 'images/logoWhite.svg';
-            document.getElementById('logo').style.zIndex = '14';
-            document.getElementById('frame-1__footer-text').style.zIndex = '14';
-            document.getElementById('frame-1__footer-text').style.color = '#fff';
-        });
-
-        seven.addEventListener("animationend", () => {
-            document.getElementById("frame-1").style.color = '#fff';
-            document.getElementById("frame-1").style.zIndex = '16'
-            document.getElementById("frame-one").innerHTML = 'stand';
-            document.getElementById("frame-two").innerHTML = 'out';
-            document.getElementById("frame-one").setAttribute('style','font-style: light');
-            document.getElementById("frame-two").setAttribute('style','font-style: italic');
-            document.getElementById('logo').src = 'images/logoWhite.svg';
-            document.getElementById('logo').style.zIndex = '16';
-            document.getElementById('frame-1__footer-text').style.zIndex = '16';
-            document.getElementById('frame-1__footer-text').style.color = '#fff';
-        });
-
-        eight.addEventListener("animationend", () => {
-            document.getElementById("frame-1").style.color = '#000';
-            document.getElementById("frame-1").style.zIndex = '4'
-            document.getElementById("frame-one").innerHTML = 'stand';
-            document.getElementById("frame-two").innerHTML = 'out';
-            document.getElementById("frame-one").setAttribute('style','font-style: italic');
-            document.getElementById("frame-two").setAttribute('style','font-style: light');
-            document.getElementById('logo').src = 'images/Logo.svg';
-            document.getElementById('logo').style.zIndex = '4';
-            document.getElementById('frame-1__footer-text').style.zIndex = '4';
-            document.getElementById('frame-1__footer-text').style.color = '#000';
-        });
     </script>
 </body>
 </html>
