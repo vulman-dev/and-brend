@@ -23,15 +23,15 @@ body {
 }
 
 #frame-1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 5%;
-    flex-grow: 1;
-    mix-blend-mode: difference;
-    animation: glitch 200ms infinite;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  flex-grow: 1;
+  mix-blend-mode: difference;
+  animation: glitch 200ms infinite;
+  
 }
 
 #frame-1__footer {
@@ -94,6 +94,32 @@ body {
   to {
     top: 0%;
     background-color: #fff;
+  }
+}
+
+@keyframes up-shtorka-circle {
+  0% {
+    width: 4.5%;
+    height: 11.5%;
+    background-color: #000;
+    border-radius: 100%;
+    margin-left: 59%;
+    margin-top: 24%;
+    
+  }
+
+  90% {
+    z-index: 20;
+  }
+
+  100% {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    border-radius: 0%;
+    margin-left: 0%;
+    margin-top: 0%;
+    z-index: 20;
   }
 }
 
@@ -160,6 +186,18 @@ body {
   animation-delay: 5s;
   animation-fill-mode:forwards;
 }
+
+#frame1-shtorka-down-two-circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: up-shtorka-circle 1s linear;
+  animation-delay: 6s;
+  animation-fill-mode:forwards;
+}
+
 
 @keyframes glitch {
   0% {
